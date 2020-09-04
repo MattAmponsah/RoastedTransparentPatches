@@ -43,7 +43,7 @@ print(f"Grade point for course 2 is: {fgp2}")
 
 gp3 = input("Enter your course 3 letter grade: ")
 
-credit3 = float(input("Enter your course 3 credit"))
+credit3 = float(input("Enter your course 3 credit: "))
 
 if gp3 == 'A' : gp3=float(4.0)
 elif gp3 == 'A-' : gp3=float(3.67)
@@ -60,7 +60,7 @@ fgp3 = (gp3*credit3)/credit3
 
 print(f"Grade point for course 3 is: {fgp3}")
 
-GPA = (gp1*credit1+gp2*credit2*gp3*credit3)/(credit1+credit2+credit3)
+GPA = (gp1*credit1+gp2*credit2+gp3*credit3)/(credit1+credit2+credit3)
 
 print(f"Your GPA is: {GPA}")
 
